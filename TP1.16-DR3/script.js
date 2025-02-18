@@ -12,3 +12,14 @@
 // Somente pode-se adicionar uma função de click na div.
 // Utilize o DOM para resolver o exercício.
 // Assim que terminar, salve todos os links para os exercícios realizados em PDF nomeando o arquivo conforme a regra “nome_sobrenome_DR3_TP1.PDF” e poste como resposta a este TP.
+const box = document.querySelector(".conteudo");
+let adicionarTamanho = 2;
+
+box.addEventListener("click", () => {
+  box.style.backgroundColor = "blue";
+  box.style.color = "white";
+  box.style.border = "solid orange 4px";
+  box.style.height = `${adicionarTamanho}px`;
+  box.style.width = `${adicionarTamanho}px`;
+  adicionarTamanho += 2;
+});

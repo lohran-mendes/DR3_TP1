@@ -13,3 +13,20 @@
 // Área = Math.PI * raio * raio
 // Considere para a circunferência:
 // Circunferência = Math.PI * raio * 2
+const raio = Number(prompt("Infome o raio de um círculo"));
+let objeto;
+if (raio && raio > 0) {
+  objeto = {
+    raio: raio,
+    circunferencia: function () {
+      return Math.PI * this.raio * 2;
+    },
+    area: function () {
+      return Math.PI * Math.pow(this.raio, 2);
+    },
+  };
+  console.log("objeto " + objeto);
+  console.log("raio do objeto " + objeto.raio);
+  console.log("circunferência do objeto " + objeto.circunferencia());
+  console.log("area do objeto " + objeto.area());
+} else alert("O valor inserido não é válido para um raio");

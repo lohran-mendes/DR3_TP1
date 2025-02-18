@@ -8,3 +8,8 @@
 // Não faça as alterações `manualmente` no arquivo `index.html`.
 // Somente pode-se adicionar uma função de click na img
 // Utilize o DOM para resolver o exercício.
+const img = document.querySelector("img");
+img.addEventListener("click", () => {
+  img.src = "./assets/graos-cafe.jpeg";
+  img.alt = "uma xícara de café";
+});

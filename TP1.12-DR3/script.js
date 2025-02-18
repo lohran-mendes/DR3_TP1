@@ -9,3 +9,13 @@
 // O objeto “prefeito” que está dentro do objeto “cidade” possui:
 // Uma propriedade para o “nome”.
 // Uma propriedade para a “idade”.
+const cidade = {
+    nome: 'Taubaté',
+    anoDeFundacao: '1800',
+    prefeito: {
+        nome: "Angel Romero",
+        idade: 33
+    },
+}
+
+console.log(cidade)

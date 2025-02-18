@@ -7,3 +7,13 @@
 // Chame o método "calcularGanho" através de um objeto instanciado.
 // No método, realize a multiplicação das “horas trabalhadas” pelo valor que o advogado ganha por hora.
 // Use a palavra chave “this".
+const advogado = {
+    nome: "Yuri Alberto",
+    horasTrabalhadas: 30,
+    valorHora: 20,
+    calcularGanho: function(){
+        return this.horasTrabalhadas * this.valorHora
+    }
+  };
+
+  console.log(advogado.calcularGanho())

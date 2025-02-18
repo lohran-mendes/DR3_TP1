@@ -6,3 +6,7 @@
 // Caso não esteja, faça com que “https://www.infnet.edu.br/infnet/instituto/” se torne o endereço deste link
 // Não faça as alterações `manualmente` no arquivo `index.html`.
 // Utilize o DOM para resolver o exercício.
+const tag = document.getElementById("link");
+if (tag.href !== "https://www.infnet.edu.br/infnet/instituto/") {
+  tag.href = "https://www.infnet.edu.br/infnet/instituto/";
+}
